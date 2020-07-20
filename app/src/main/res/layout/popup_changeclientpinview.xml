@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popupLayout"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:paddingVertical="20dp"
+    android:paddingHorizontal="10dp"
+    android:layout_gravity="center"
+    tools:context=".ui.AccountInfoDialog">
+
+    <TextView
+        android:id="@+id/text_change_clientpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/clientPin_change_title"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/text_details_change_clientpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/clientPin_explain"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorWhite"/>
+
+    <LinearLayout
+        android:id="@+id/layout_oldPin"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/old_pin"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/clientPin_oldentry"
+            android:inputType="numberPassword"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:background="@color/colorWhite" >
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_newPin"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/new_pin"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/clientPin_newentry"
+            android:inputType="numberPassword"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:background="@color/colorWhite" >
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_confirmPin"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/repeated_pin"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/clientPin_repeatentry"
+            android:inputType="numberPassword"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:background="@color/colorWhite">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_applychange"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_changepin"
+            android:layout_width="wrap_content"
+            android:backgroundTint="@color/ruby"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:text="@string/clientPin_confirmaction"/>
+    </LinearLayout>
+</LinearLayout>

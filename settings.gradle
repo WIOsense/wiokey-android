@@ -1,0 +1,3 @@
+rootProject.name='WioKey'
+include ':app', ':roaming-authenticator'
+project(':roaming-authenticator').projectDir = new File('roaming-authenticator-android')

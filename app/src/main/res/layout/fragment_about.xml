@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/darkerGrey"
+        android:padding="10dp"
+        tools:context=".ui.fragments.AboutFragment" >
+
+        <ImageView
+            android:id="@+id/image_wiosense_logo"
+            android:src="@drawable/ic_logo_wiosense_white"
+            android:layout_width="300dp"
+            android:layout_height="90dp"
+            android:paddingTop="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/layout_tutorialshare"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="WIOsense Logo"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:id="@+id/layout_tutorialshare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_wiosense_logo"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:id="@+id/layout_tutorial"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.5"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/roundborder_purple" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@android:drawable/ic_media_play"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:paddingEnd="10dp"/>
+
+                    <TextView
+                        android:id="@+id/text_tutorial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="@string/about_restartTutorial"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_share"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.5"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/roundborder_purple" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:paddingEnd="15dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_share"
+                        android:tint="@color/colorWhite" />
+
+                    <TextView
+                        android:id="@+id/text_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/about_shareApp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_section_faq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="25sp"
+            android:textColor="@color/lighterGrey"
+            android:text="@string/about_faq"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_tutorialshare" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listview_faq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/text_about_wiosense"
+            app:layout_constraintTop_toBottomOf="@id/text_section_faq"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <TextView
+            android:id="@+id/text_about_wiosense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="25sp"
+            android:text="@string/about_aboutUs"
+            android:textStyle="bold"
+            android:textColor="@color/lighterGrey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/listview_faq" />
+
+        <TextView
+            android:id="@+id/text_about_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintTop_toBottomOf="@id/text_about_wiosense"
+            android:textColor="@color/lighterGrey"
+            android:text="@string/about_aboutUsText" />
+
+        <LinearLayout
+            android:id="@+id/layout_social"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/text_about_us">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:useCompatPadding="true"
+                app:srcCompat="@android:drawable/ic_dialog_info"
+                app:backgroundTint="@color/colorPurple"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/linkedin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:useCompatPadding="true"
+                app:srcCompat="@drawable/logo_linkedin"
+                app:backgroundTint="@color/colorPurple"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:useCompatPadding="true"
+                app:srcCompat="@drawable/logo_medium"
+                app:backgroundTint="@color/colorPurple"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:useCompatPadding="true"
+                app:srcCompat="@android:drawable/ic_dialog_email"
+                app:backgroundTint="@color/colorPurple"/>
+
+        </LinearLayout>
+
+        <!--
+
+        <TextView
+            android:id="@+id/text_unsubscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Subscribe/Unsubscribe"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/roundborder_purple"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/layout_social"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/text_section_license"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="25sp"
+            android:text="@string/about_license"
+            android:textStyle="bold"
+            android:textColor="@color/lighterGrey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_social" /> -->
+
+        <TextView
+            android:id="@+id/text_compatibility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_social"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/about_compatiblityText"
+            android:textSize="13sp"
+            android:textColor="@color/lighterGrey" />
+
+        <TextView
+            android:id="@+id/text_licenseinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_compatibility"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/about_licenseInfo"
+            android:textSize="13sp"
+            android:textColor="@color/lighterGrey" />
+
+                <TextView
+                    android:id="@+id/text_termsconditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@id/text_license"
+                    app:layout_constraintTop_toBottomOf="@id/text_licenseinfo"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/about_termsconditions"
+                    android:textSize="13sp"
+                    android:textColor="@color/lighterGrey" />
+
+                <TextView
+                    android:id="@+id/text_privacypolicy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@id/text_license"
+                    app:layout_constraintTop_toBottomOf="@id/text_licenseinfo"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/about_privacypolicy"
+                    android:textSize="13sp"
+                    android:textColor="@color/lighterGrey" />
+
+        <TextView
+            android:id="@+id/text_license"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            app:layout_constraintTop_toBottomOf="@id/text_termsconditions"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/lighterGrey"
+            android:text="@string/about_licenseText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

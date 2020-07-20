@@ -1,0 +1,489 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" translatable="false">WioKey</string>
+    <string name="title_home">Home</string>
+    <string name="title_credential">Credentials</string>
+    <string name="title_about">About</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="okay">Okay</string>
+    <string name="cancel">Cancel</string>
+
+    <!--  Bluetooth  -->
+    <string name="newdevice">Add new device</string>
+    <string name="nodefaultdevicename">No default host</string>
+    <string name="nodefaultdeviceaddr">00:00:00:00:00:00</string>
+
+    <string name="nobluetooth">Device does not have bluetooth</string>
+    <string name="bluetoothoff">Bluetooth is off. Press here to turn on</string>
+    <string name="bluetoothoff_dialog_title">Bluetooth is OFF!</string>
+    <string name="bluetoothoff_dialog_message">WioKey requires an active Bluetooth connection to provide extra security for accounts on remote devices. Would you like to enable Bluetooth?</string>
+
+    <string name="nosecurity">Your device is not secured. Please add biometrics/PIN/Pattern to your device screen unlock.</string>
+
+    <string name="nodefaulthostmessage">Tap the key to add a new device</string>
+    <string name="connectedhostmessage">Connected to %1$s</string>
+    <string name="disconnectedhostmessage">%1$s disconnected\nTap the key to select another device or try to reconnect</string>
+    <string name="connectinghostmessage">Connecting to %1$s</string>
+    <string name="pairingnewdevice">Bluetooth is now discoverable!\nWaiting to pair with a new device…</string>
+
+    <!--  Biometrics  -->
+    <string name="biometrics_promptTitle">Biometric login</string>
+    <string name="biometrics_promptSubtitle">WioKey requires your biometrics for added security</string>
+
+    <string name="biometrics_noBiometricsTitle">No Device Security Set</string>
+    <string name="biometrics_noBiometricsSubtitle">Please set biometrics/pin/pattern/password on your device to use this app.\nOpen security settings?</string>
+
+    <string name="biometrics_lockScreenExplanation">WioKey requires your authentication to access your credentials. Tap to authenticate</string>
+    <string name="biometrics_credentialsExplanation">WioKey requires a secure screen lock to protect your credentials. Tap to create one</string>
+
+    <!--  Tutorial  -->
+    <string name="tutorial_1_title">Welcome!</string>
+    <string name="tutorial_1_content">Thank you for choosing WioKey! We will provide you here with some general information on what WioKey is and how it works.\n\nPlease visit our website <a href="https://www.wiokey.de">wiokey.de</a> or the <b>About FAQ</b> page for detailed information on how to get started.</string>
+    <string name="tutorial_1_summary"> </string>
+
+    <string name="tutorial_2_title">Your are in control!</string>
+    <string name="tutorial_2_content">We use your phone\'s native lock screen capabilities (PIN, pattern, biometric profile) to safeguard your login information. Because of this, we require at least one verification method to be active!\n\nRest assured, your biometric info never leaves your phone! Check the <b>About</b> section to find out more!</string>
+    <string name="tutorial_2_summary"> </string>
+
+    <string name="tutorial_3_title">Your phone as Security Key</string>
+    <string name="tutorial_3_content">Your phone is recognized securely by your PC via Bluetooth without requiring an extra internet connection during the authentication.\n\nYour PC will send any authentication request over Bluetooth to your phone which will securely sign the request with your credentials stored in your phone\'s trusted environment.</string>
+    <string name="tutorial_3_summary"> </string>
+
+    <string name="tutorial_4_title">Get started!</string>
+    <string name="tutorial_4_content">Follow the quickstart guides on <a href="https://www.wiokey.de/tutorial">wiokey.de/tutorial</a> and stay tuned for upcoming features like seamless logins (regardless of server side FIDO2 support), credentials secure back-ups, and much more.</string>
+    <string name="tutorial_4_summary">Made with ❤ in Bremen, Germany</string>
+
+    <!--  Home Fragment  -->
+    <string name="home_bluetoothdisabled">Bluetooth is not enabled</string>
+
+    <!--  Account View Popup  -->
+    <string name="account_domainname">Domain Name</string>
+    <string name="account_domainid">Domain ID:</string>
+    <string name="account_user">User:</string>
+    <string name="account_userid">User ID:</string>
+    <string name="account_createdon">Created on:</string>
+
+    <!-- Change ClientPin Popup -->
+    <string name="clientPin_change_title">Change PIN</string>
+    <string name="clientPin_set_title">Set PIN</string>
+    <string name="clientPin_explain">The PIN must have at least 4 digits</string>
+    <string name="clientPin_oldentry">Old PIN</string>
+    <string name="clientPin_newentry">New PIN</string>
+    <string name="clientPin_repeatentry">Confirm new PIN</string>
+    <string name="clientPin_confirmaction">Apply</string>
+    
+    <!--  Credential Management  -->
+    <string name="credMan_removeSuccess">Removed credential %1$s for user %2$s</string>
+    <string name="credMan_resetSuccess">Authenticator reset finished</string>
+    <string name="credMan_operationCanceled">Remove operation canceled</string>
+
+    <string name="credMan_pinResetSuccess">Reset PIN successful</string>
+    <string name="credMan_pinResetCanceled">Reset PIN canceled</string>
+
+    <string name="credMan_changeClientPinSuccess">Changed PIN successfully</string>
+    <string name="credMan_changeClientPinNoMatch">PIN confirmation does not match new PIN!</string>
+    <string name="credMan_changeClientPinTooShort">PIN invalid! PIN is shorter than 4 digits.</string>
+    <string name="credMan_changeClientPinResetCanceled">Resetting PIN state failed due to invalid user verification or timeout!</string>
+    <string name="credMan_changeClientPinCanceled">PIN change failed</string>
+
+    <string name="credMan_u2fCredential">U2F Credential</string>
+
+    <string name="credMan_hardwareBacked">Your android device supports storing your keys inside of a Hardware Security Module, or a Trusted Execution Environment! Meaning that Google believes that your credentials cannot be remotely extracted 🎉🥳!</string>
+
+    <!--  About  -->
+    <string name="about_restartTutorial">Tutorial</string>
+    <string name="about_shareApp">Share</string>
+    <string name="about_faq">FAQ</string>
+    <string name="about_aboutUs">About Us</string>
+    <string name="about_aboutUsText">We are a German start-up passionate about wireless connectivity on a mission to seamlessly and securely connect our users to the digital world. Join us on this path and find out more by following the links below!</string>
+    <string name="about_license">License</string>
+    <string name="about_termsconditions"><u>Terms and Conditions</u></string>
+    <string name="about_privacypolicy"><u>Privacy Policy</u></string>
+    <string name="about_licenseInfo"><u>License Info</u></string>
+    <string name="about_compatiblityText"><u>Compatibility Info</u></string>
+    <string name="about_licenseText">Copyright \u00A9 2020 WIOsense GmbH \u0026 Co. KG</string>
+
+    <string name="about_shareTitle">How do you want to share the app?</string>
+    <string name="about_shareText" translatable="false">http://play.google.com/store/apps/details?id=%1$s</string>
+    <string name="about_shareOptInText" translatable="false">http://www.wiokey.de/#download</string>
+    <string name="about_shareOptInTextDescription" translatable="false">Check out this interesting security key app (still in beta testing)\n</string>
+    <string name="companyWebsiteURL" translatable="false" >https://www.wiosense.de/</string>
+    <string name="companyLinkedInURL" translatable="false">https://www.linkedin.com/company/wiosense/</string>
+    <string name="companyMediumURL" translatable="false">https://medium.com/@wiosense</string>
+    <string name="companyEmail" translatable="false">contact@wiosense.de</string>
+    <string name="about_mailto" translatable="false">mailto:%s</string>
+    <string name="appWebsiteURL" translatable="false">https://wiokey.de</string>
+
+    <string name="optout_events">Send anonymous app events</string>
+    <string name="optout_crash">Send crash reports</string>
+    <string name="optout_notifications">Receive push notifications</string>
+
+    <!--  Subscribe  -->
+    <string name="subscribe_unsubscribe">Unsubscribe</string>
+    <string name="subscribe_subscribe">Subscribe!</string>
+    <string name="subscribe_no">Not now</string>
+    <string name="subscribe_title">Subscribe to our updates</string>
+    <string name="subscribe_body">We are a young startup with a grand vision.\n\nSupport us by subscribing!</string>
+    <string name="subscribe_email">Email:</string>
+
+    <!--  FAQ  -->
+    <string name="faq_1_question">Which websites can I use the app with?</string>
+    <string name="faq_1_answer">2-Factor Authentication can be used with any of the <a href="https://www.dongleauth.info/">U2F-supporting websites</a>. The complete passwordless experience is today only implemented by Microsoft and a few others. Stay tuned for updates on the FIDO2 deployment as well as our development of a FIDO2-independent solution.</string>
+
+    <string name="faq_2_question">Why do you make use of my biometrics?</string>
+    <string name="faq_2_answer">Because of the sensitive nature of the information being handled, we leverage the native biometric security of your phone to ensure that <b>only you</b> are able to look and manage it. Your biometric data never leaves your device, nor do we have any type of access to it.</string>
+
+    <string name="faq_3_question">Can I use the app without biometrics?</string>
+    <string name="faq_3_answer">You can always make use of pattern/PIN/passwords to verify against, but at least one type of screen lock verification must be enabled.</string>
+
+    <string name="faq_4_question">How do I add a Bluetooth Device?</string>
+    <string name="faq_4_answer">
+        First you need to make sure that your phone is discoverable, for this go to the <b>Home</b> section, click on the connect button, and then select <b>+ Add new device</b>\n
+        Then you must start pairing from your PC, for this go to your computer\'s <b>Bluetooth Settings</b> and click on add a new device. For more information on how to add a device you can check support for <a href="https://support.microsoft.com/help/15290/windows-connect-bluetooth-device">Windows</a>, <a href="https://support.apple.com/guide/mac-help/connect-a-bluetooth-device-blth1004/mac">MacOS</a></string>
+
+    <string name="faq_5_question">What happens if I move my device away from my computer?</string>
+    <string name="faq_5_answer">If your device stays within Bluetooth range(&lt;10m), you will receive push notifications of any incoming requests to log in or make a new crendential. You can safely ignore these, as the app needs your user input to authorize any action.\n\nIn case the Bluetooth connection is lost, the app will automatically try to reconnect once in range, but this is highly dependent on both your device\'s and computer\'s bluetooth chip. If this doesn\'t happen automatically, you can manually reconnect by pressing on the connect button in the home screen and picking your preferred device.</string>
+
+    <string name="faq_6_question">I can\'t pair my device with my computer</string>
+    <string name="faq_6_answer">Bluetooth may behave unexpectedly at times. Such problems can usually be mitigated by toggling the bluetooth connection on your phone and/or computer. One of them must be acting up :)</string>
+
+    <string name="faq_7_question">I am not receiving a prompt on my phone</string>
+    <string name="faq_7_answer">In this alpha release you need to make sure that your application is running in the foreground to receive the prompt. Depending on your device you can also get notification prompts with your app running in the background</string>
+
+    <string name="faq_8_question">What happens if I lose my phone?</string>
+    <string name="faq_8_answer">You do not need to be afraid about misuse of your credentials since your biometrics are required in order to use the app. Restoring your credentials is at this point in time not possible, but feel free to install the app on a new device and register a new key. Your old credentials will expire automatically.</string>
+
+    <string name="faq_9_question">How are my credentials stored?</string>
+    <string name="faq_9_answer">We store all your credentials locally in the native Android Keystore system. However, this does not mean that they are stored inside a secure hardware element. For us to be sure, we need at least one credential in the list, which can be generated in <a href="https://demo.wiokey.de">demo.wiokey.de</a>.\n\n
+        Once you have generated your first credential/dummy credential, the storage type can be seen here:\n\n
+    </string>
+    <string name="faq_9_empty">No credentials have been generated yet!</string>
+    <string name="faq_9_hardware">Keys are stored in <b>Hardware</b>! (TEE or Secure element)</string>
+    <string name="faq_9_sofware">Keys are protected by <b>Software Encryption</b>!</string>
+
+    <string name="faq_10_question">Can I delete my credentials?</string>
+    <string name="faq_10_answer">You can easily manage your credentials by navigating to the <b>Credentials</b> section to see all of your registered credentials alongside relevant information like creation date. </string>
+
+    <string name="faq_11_question">Can I backup/recover my credentials?</string>
+    <string name="faq_11_answer">Backing up and restoring your credentials is at this point in time not possible. This is why we encourage everyone to follow the general Universal 2 Factor authenticaton recommendations and have a fallback secondary login solution that is not tied to the phone.</string>
+
+    <!-- Licenses -->
+    <string name="license_title">License Information</string>
+    <string name="license_description">BSD 3-Clause License\n\nCopyright \u00A9 2020 WIOsense GmbH \u0026 Co. KG\nAll rights reserved.\n\n
+
+        Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:\n\n
+
+        * Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.\n\n
+
+        * Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.\n\n
+
+        * Neither the name of the copyright holder nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.\n\n
+
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</string>
+
+    <string name="license_acknowledgements_title">Acknowledgements</string>
+    <string name="license_acknowledgements">WioKey uses OSS components and libraries. To this end, we would like to acknowledge the following components and libraries that WioKey extends upon.</string>
+    <string name="license_1_title">WearAuthn</string>
+    <string name="license_1_description">MIT License\n\nCopyright \u00A9 2019 Fabian Henneke\n\nPermission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</string>
+
+    <string name="license_2_title">WearMouse</string>
+    <string name="license_2_description">Apache 2.0 License\n\nCopyright \u00A9 2014–2020 Google\n\n<a href="http://www.apache.org/licenses/LICENSE-2.0.txt">"http://www.apache.org/licenses/LICENSE-2.0.txt"</a></string>
+
+    <string name="license_3_title">WebAuthn Authenticator</string>
+    <string name="license_3_description">BSD 3-Clause License\n\nCopyright \u00A9 2019 Duo Labs\n\nAll rights reserved.\n\n
+
+        Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:\n\n
+
+        * Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.\n\n
+
+        * Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.\n\n
+
+        * Neither the name of the copyright holder nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.\n\n
+
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</string>
+
+    <string name="license_4_title">EventBus</string>
+    <string name="license_4_description">Apache 2.0 License\n\nCopyright \u00A9 2012–2020 Markus Junginger <a href="http://greenrobot.org">http://greenrobot.org</a>\n\n<a href="http://www.apache.org/licenses/LICENSE-2.0.txt">"http://www.apache.org/licenses/LICENSE-2.0.txt"</a></string>
+
+    <string name="license_5_title">Firebase</string>
+    <string name="license_5_description">Apache 2.0 License\n\nCopyright \u00A9 2004–2020 Google\n\n<a href="http://www.apache.org/licenses/LICENSE-2.0.txt">"http://www.apache.org/licenses/LICENSE-2.0.txt</a></string>
+
+
+    <!-- Notifications -->
+    <string name="notification_title_actionrequired">"Action Required"</string>
+    <string name="notification_body_actionrequired">An account just requested for your authentication</string>
+    <string name="notification_title_foregroundservice">WioKey</string>
+    <string name="notification_body_foregroundservice">Your key is running in the background</string>
+
+    <!-- Toasts -->
+    <string name="toast_deviceselected">"Selected device %1$s as default"</string>
+    <string name="toast_deviceselected_fail">Preference not updated. Please retry!</string>
+    <string name="toast_deviceregister_repeatedcall">"Patience my lord! I am already discoverable"</string>
+    <string name="toast_deviceregister_disabled">Discoverable mode disabled</string>
+    <string name="toast_deviceregister_enabled">Ready to pair! Discoverable for %1$d s.</string>
+    <string name="toast_devicemanual_connect">Connecting to device %1$s</string>
+    <string name="toast_device_connected">%1$s connected</string>
+    <string name="toast_device_disconnected">Disconnected Bluetooth connection</string>
+    <string name="toast_devicecleared">Cleared HID device</string>
+    <string name="toast_deviceunpaired">Unpaired host device %1$s</string>
+    <string name="toast_deviceunpaired_failed">Failed to unpair host device %1$s</string>
+    <string name="toast_subscribed">You are subscribed! Thank you!</string>
+    <string name="toast_unsubscribe">You are unsubscribed!</string>
+
+    <!-- Dialog -->
+    <string name="dialog_title_unsubscribe">Unsubscribe</string>
+    <string name="dialog_body_unsubscribe">Are you sure you want to unsubscribe?</string>
+    <string name="dialog_title_resubscribe">Register New Email?</string>
+    <string name="dialog_body_resubscribe">You already have an email account subscribed (%1$s). Would you like to register this new one?</string>
+    <string name="dialog_title_removedevice">Remove device %1$s</string>
+    <string name="dialog_body_removedevice">Proceed to remove and unpair host device %1$s, address: %2$s ?</string>
+    <string name="dialog_optout">Don\'t send any anonymous data</string>
+    <string name="dialog_optin">Allow to send anonymous data</string>
+    <string name="dialog_title_clientpin">ClientPin Settings</string>
+    <string name="dialog_body_clientpin">For increased security, some FIDO2 authentication scenarios may require a ClientPin verification asking you to set a standalone trusted PIN as part of your authenticator.</string>
+    <string name="dialog_status_clientpin_not_set">\n\nA PIN has not been set!</string>
+    <string name="dialog_status_clientpin_set">\n\nA PIN has been already set!</string>
+    <string name="dialog_btn_setpin_clientpin">Set PIN</string>
+    <string name="dialog_btn_changepin_clientpin">Change PIN</string>
+    <string name="dialog_btn_factoryreset_clientpin">Factory Reset</string>
+
+    <!-- Privacy Policy -->
+    <string name="compatibilityinfo"><b><u>Phone</u></b>\n\n -Android 9.0+\n -Support for Bluetooth HID device profile (OnePlus and some Nokia handsets do not support this Bluetooth profile)\n\n<b><u>Windows/macOS/Linux</u></b>\n\nPlease refer to this <a href='https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/'>"FIDO compatibility list"</a> for a list of compatible operating systems and respective browsers</string>
+    <string name="privacypolicy">
+        <b>Privacy Policy</b>\n\n
+        WIOsense GmbH \u0026 Co. KG built the WioKey app as
+                  an Open Source app. This SERVICE is provided by
+                  WIOsense GmbH \u0026 Co. KG at no cost and is intended for use as
+                  is.\n\n
+        This page is used to inform visitors regarding our
+                  policies with the collection, use, and disclosure of Personal
+                  Information if anyone decided to use our Service.\n\n
+        If you choose to use our Service, then you agree to
+                  the collection and use of information in relation to this
+                  policy. The Personal Information that we collect is
+                  used for providing and improving the Service. We will not use or share your information with
+                  anyone except as described in this Privacy Policy.\n\n
+        The terms used in this Privacy Policy have the same meanings
+                  as in our Terms and Conditions, which is accessible at
+                  WioKey unless otherwise defined in this Privacy Policy.\n\n
+        <b>Information Collection and Use</b>\n
+        For a better experience, while using our Service, we
+                  may require you to provide us with certain personally
+                  identifiable information. The information that
+                  we request will be retained by us and used as described in this privacy policy.\n\n
+        The app does use third party services that may collect information used to identify you.\n\n
+        Please check the privacy policy of the third party service providers used by the app\n\n
+        \u2022 Google Play Services\n
+        \u2022 Google Analytics for Firebase\n
+        \u2022 Firebase Crashlytics\n
+        \u2022 Facebook SDK\n\n
+        <b>Log Data</b>\n
+        We want to inform you that whenever you
+                  use our Service, in a case of an error in the app
+                  we collect data and information (through third party
+                  products) on your phone called Log Data. This Log Data may
+                  include information such as your device Internet Protocol
+                  (“IP”) address, device name, operating system version, the
+                  configuration of the app when utilizing our Service,
+                  the time and date of your use of the Service, and other
+                  statistics.\n\n
+        <b>Cookies</b>\n
+        Cookies are files with a small amount of data that are
+                  commonly used as anonymous unique identifiers. These are sent
+                  to your browser from the websites that you visit and are
+                  stored on your device internal memory.\n\n
+        This Service does not use these "cookies" explicitly. However,
+                  the app may use third party code and libraries that use
+                  "cookies" to collect information and improve their services.
+                  You have the option to either accept or refuse these cookies
+                  and know when a cookie is being sent to your device. If you
+                  choose to refuse our cookies, you may not be able to use some
+                  portions of this Service.\n\n
+        <b>Service Providers</b>\n
+        We may employ third-party companies and individuals due to the following reasons:\n\n
+        \u2022 To facilitate our Service;\n
+        \u2022 To provide the Service on our behalf;\n
+        \u2022 To perform Service-related services; or\n
+        \u2022 To assist us in analyzing how our Service is used.\n\n
+        We want to inform users of this Service that these third parties have access to your Personal
+                  Information. The reason is to perform the tasks assigned to
+                  them on our behalf. However, they are obligated not to
+                  disclose or use the information for any other purpose.\n\n
+        <b>Security</b>\n
+        We value your trust in providing us your
+                  Personal Information, thus we are striving to use commercially
+                  acceptable means of protecting it. But remember that no method
+                  of transmission over the internet, or method of electronic
+                  storage is 100% secure and reliable, and we cannot
+                  guarantee its absolute security.\n\n
+        <b>Links to Other Sites</b>\n
+        This Service may contain links to other sites. If you click on
+                  a third-party link, you will be directed to that site. Note
+                  that these external sites are not operated by us.
+                  Therefore, we strongly advise you to review the
+                  Privacy Policy of these websites. We have
+                  no control over and assume no responsibility for the content,
+                  privacy policies, or practices of any third-party sites or
+                  services.\n\n
+        <b>Children’s Privacy</b>\n
+        These Services do not address anyone under the age of 13.
+                  We do not knowingly collect personally
+                  identifiable information from children under 13. In the case
+                  we discover that a child under 13 has provided
+                  us with personal information, we immediately
+                  delete this from our servers. If you are a parent or guardian
+                  and you are aware that your child has provided us with
+                  personal information, please contact us so that
+                  we will be able to do necessary actions.\n\n
+        <b>Changes to This Privacy Policy</b>\n
+        We may update our Privacy Policy from
+                  time to time. Thus, you are advised to review this page
+                  periodically for any changes. We will
+                  notify you of any changes by posting the new Privacy Policy on
+                  this page.\n
+        This policy is effective as of 2020-06-12\n\n
+        <b>Contact Us</b>\n
+        If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at contact@wiosense.de.
+      </string>
+
+    <!-- Terms and Conditions -->
+    <string name="termsconditions">
+    <b>Terms \u0026 Conditions</b>\n\n
+        By downloading or using the app, these terms will
+                  automatically apply to you – you should make sure therefore
+                  that you read them carefully before using the app. You’re not
+                  allowed to copy, or modify the app, any part of the app, or
+                  our trademarks in any way. You’re not allowed to attempt to
+                  extract the source code of the app, and you also shouldn’t try
+                  to translate the app into other languages, or make derivative
+                  versions. The app itself, and all the trade marks, copyright,
+                  database rights and other intellectual property rights related
+                  to it, still belong to WIOsense GmbH \u0026 Co. KG.\n\n
+        WIOsense GmbH \u0026 Co. KG is committed to ensuring that the app is
+                  as useful and efficient as possible. For that reason, we
+                  reserve the right to make changes to the app or to charge for
+                  its services, at any time and for any reason. We will never
+                  charge you for the app or its services without making it very
+                  clear to you exactly what you’re paying for.\n\n
+        The WioKey app stores and processes personal data that
+                  you have provided to us, in order to provide our
+                  Service. It’s your responsibility to keep your phone and
+                  access to the app secure. We therefore recommend that you do
+                  not jailbreak or root your phone, which is the process of
+                  removing software restrictions and limitations imposed by the
+                  official operating system of your device. It could make your
+                  phone vulnerable to malware/viruses/malicious programs,
+                  compromise your phone’s security features and it could mean
+                  that the WioKey app won’t work properly or at all.\n\n
+        The app does use third party services that declare their own
+                    Terms and Conditions.\n\n
+        Please check the Terms and Conditions of third party service providers used by the app\n\n
+        \u2022 Google Play Services\n
+        \u2022 Google Analytics for Firebase\n
+        \u2022 Firebase Crashlytics\n
+        \u2022 Facebook SDK\n\n
+        You should be aware that there are certain things that
+                  WIOsense GmbH \u0026 Co. KG will not take responsibility for. Certain
+                  functions of the app will require the app to have an active
+                  internet connection. The connection can be Wi-Fi, or provided
+                  by your mobile network provider, but WIOsense GmbH \u0026 Co. KG
+                  cannot take responsibility for the app not working at full
+                  functionality if you don’t have access to Wi-Fi, and you don’t
+                  have any of your data allowance left.\n\n
+        If you’re using the app outside of an area with Wi-Fi, you
+                  should remember that your terms of the agreement with your
+                  mobile network provider will still apply. As a result, you may
+                  be charged by your mobile provider for the cost of data for
+                  the duration of the connection while accessing the app, or
+                  other third party charges. In using the app, you’re accepting
+                  responsibility for any such charges, including roaming data
+                  charges if you use the app outside of your home territory
+                  (i.e. region or country) without turning off data roaming. If
+                  you are not the bill payer for the device on which you’re
+                  using the app, please be aware that we assume that you have
+                  received permission from the bill payer for using the app.\n\n
+        Along the same lines, WIOsense GmbH \u0026 Co. KG cannot always take
+                  responsibility for the way you use the app i.e. You need to
+                  make sure that your device stays charged – if it runs out of
+                  battery and you can’t turn it on to avail the Service,
+                  WIOsense GmbH \u0026 Co. KG cannot accept responsibility.\n\n
+        With respect to WIOsense GmbH \u0026 Co. KG’s responsibility for your
+                  use of the app, when you’re using the app, it’s important to
+                  bear in mind that although we endeavour to ensure that it is
+                  updated and correct at all times, we do rely on third parties
+                  to provide information to us so that we can make it available
+                  to you. WIOsense GmbH \u0026 Co. KG accepts no liability for any
+                  loss, direct or indirect, you experience as a result of
+                  relying wholly on this functionality of the app.\n\n
+        At some point, we may wish to update the app. The app is
+                  currently available on Android – the requirements for
+                  system(and for any additional systems we
+                  decide to extend the availability of the app to) may change,
+                  and you’ll need to download the updates if you want to keep
+                  using the app. WIOsense GmbH \u0026 Co. KG does not promise that it
+                  will always update the app so that it is relevant to you
+                  and/or works with the Android version that you have
+                  installed on your device. However, you promise to always
+                  accept updates to the application when offered to you, We may
+                  also wish to stop providing the app, and may terminate use of
+                  it at any time without giving notice of termination to you.
+                  Unless we tell you otherwise, upon any termination, (a) the
+                  rights and licenses granted to you in these terms will end;
+                  (b) you must stop using the app, and (if needed) delete it
+                  from your device.\n\n
+        <b>Changes to This Terms and Conditions</b>\n
+        We may update our Terms and Conditions
+                  from time to time. Thus, you are advised to review this page
+                  periodically for any changes. We will
+                  notify you of any changes by posting the new Terms and
+                  Conditions on this page.\n
+        These terms and conditions are effective as of 2020-06-12\n\n
+        <b>Contact Us</b>\n
+        If you have any questions or suggestions about our
+                  Terms and Conditions, do not hesitate to contact us
+                  at contact@wiosense.de.
+    </string>
+
+</resources>

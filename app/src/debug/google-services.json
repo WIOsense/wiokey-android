@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "705940823135",
+    "firebase_url": "https://wiokey-playground.firebaseio.com",
+    "project_id": "wiokey-playground",
+    "storage_bucket": "wiokey-playground.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705940823135:android:0cdad5b1f58ac03dca4fea",
+        "android_client_info": {
+          "package_name": "de.wiosense.wiokey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705940823135-0u0gnoflo61l3lhfvm14g454dnlne500.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLShMLMdo0X-_XPZ3gN63M-Cb1wRx-_bM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705940823135-0u0gnoflo61l3lhfvm14g454dnlne500.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

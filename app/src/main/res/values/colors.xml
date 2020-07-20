@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8c2bb7</color>
+    <color name="colorPrimaryDark">#2f333f</color>
+    <color name="colorBlue">#22269c</color>
+    <color name="darkBlue">#1b2144</color>
+    <color name="lighterGrey">#92969F</color>
+    <color name="lightGrey">#60646d</color>
+    <color name="Grey">#50535d</color>
+    <color name="darkGrey">#262a37</color>
+    <color name="darkerGrey">#080913</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorPurple">#7030A0</color>
+    <color name="ruby">#DC145F</color>
+</resources>

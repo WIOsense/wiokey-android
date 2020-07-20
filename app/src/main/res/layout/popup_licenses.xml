@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/license_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="@string/license_description" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:text="@string/license_acknowledgements_title" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="@string/license_acknowledgements" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listview_licenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <ImageView
+            android:id="@+id/button_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:adjustViewBounds="false"
+            android:src="@drawable/ic_simplecross"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</ScrollView>
